@@ -2,12 +2,12 @@
   "name": "bitcoinjs-lib-browser",
   "version": "5.1.7",
   "description": "Browserified bundle for bitcoinjs-lib: Client-side Bitcoin Javscript library",
-  "dependencies": {
+  "devDependencies": {
     "bitcoinjs-lib": "^5.1.7",
     "browserify": "^16.5.1",
     "uglify-es": "^3.3.9"
   },
-  "devDependencies": {},
+  "dependencies": {},
   "files": [
     "bitcoinjs.js",
     "bitcoinjs.min.js"
