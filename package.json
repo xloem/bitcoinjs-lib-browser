@@ -1,0 +1,36 @@
+{
+  "name": "bitcoinjs-lib-browser",
+  "version": "5.1.7",
+  "description": "Browserified bundle for bitcoinjs-lib: Client-side Bitcoin Javscript library",
+  "dependencies": {
+    "bitcoinjs-lib": "^5.1.7",
+    "browserify": "^16.5.1",
+    "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {},
+  "files": [
+    "bitcoinjs.js",
+    "bitcoinjs.min.js"
+  ],
+  "scripts": {
+    "build": "browserify -r . --standalone bitcoinjs > bitcoinjs.js && uglifyjs -c --mangle reserved=['BigInteger','ECPair','Point'] bitcoinjs.js > bitcoinjs.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xloem/bitcoinjs-lib-browser.git"
+  },
+  "keywords": [
+    "bitcoinjs",
+    "bitcoin",
+    "browserify",
+    "javascript",
+    "bitcoinjs-lib",
+    "browser"
+  ],
+  "author": "Karl Semich <0xloem@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xloem/bitcoinjs-lib-browser/issues"
+  },
+  "homepage": "https://github.com/xloem/bitcoinjs-lib-browser#readme"
+}
